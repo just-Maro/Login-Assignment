@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="registeration py-3">
+        <div class="container d-flex align-items-center justify-content-center my-5">
+            <div group class="group w-75">
+                <form id="registerForm" class="m-5 text-center">
+                    <h1 class="mb-4 display-6">Smart Login System</h1>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control text-white bg-transparent" id="userName" placeholder="Enter Your Name">
+                    </div>
+                    <p id="nameAlert" class="text-danger d-none">At least Two Characters</p>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control text-white bg-transparent" id="userEmail"
+                            placeholder="Enter Your Email" aria-describedby="emailHelp">
+                    </div>
+                    <p id="emailAlert" class="text-danger d-none">Invalid Email <br> Example@gmail.com</p>
+
+                    <div class="mb-3">
+                        <input type="password" class="form-control text-white bg-transparent" id="userPass"
+                        placeholder="Enter Your Password">
+                    </div>
+                    <P id="passAlert" class="text-danger d-none">Need a stronager Password</P>
+                    <p id="inputsAlert" class="text-danger d-none">All Inputs are Required</p>
+                    <p id="existAlert" class="text-danger d-none">Email is already Exist</p>
+                    <p id="successAlert" class="text-success d-none">Success</p>
+
+                    <button type="submit" class="btn btn-outline-info my-4 w-100">Sign Up</button>
+
+                    <p>You have an account? <a class="text-white signup" href="./../SignIn/index.html">Sign In</a></p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./SignUpjs/bootstrap.bundle.min.js"></script>
+    <script src="./SignUpjs/SignUp.js"></script>
+</body>
+
+</html>
